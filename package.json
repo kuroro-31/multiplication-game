@@ -4,10 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build:ts": "tsc",
-    "minify:js": "terser main.js -o main.min.js --compress --mangle",
-    "build:css": "npx postcss style.scss -o style.min.css",
-    "build-and-minify": "npm run build:ts && npm run minify:js && npm run build:css && rm main.js"
+    "build:ts": "tsc --project .",
+    "minify:js": "terser asset/main.js -o asset/public/main.min.js --compress --mangle",
+    "build:css": "npx postcss asset/style.scss -o asset/public/style.min.css",
+    "build-and-minify": "npm run build:ts && npm run minify:js && npm run build:css && rm asset/main.js"
   },
   "keywords": [],
   "author": "",

@@ -1,17 +1,16 @@
+all: build-ts minify-js build-css minify-css
+
 build-ts:
 	npm run build:ts
 
-minify-js: build-ts
+minify-js:
 	npm run minify:js
 
-build-scss: minify-js
-	npm run build:scss
+build-css:
+	npm run build:css
 
-minify-css: build-scss
+minify-css:
 	npm run minify:css
 
-clean: minify-css
-	rm main.js
-	rm style.css
-
-all: clean
+clean:
+	rm -f asset/main.js asset/public/main.min.js asset/style.css asset/public/style.min.css

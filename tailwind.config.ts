@@ -1,6 +1,6 @@
-module.exports = {
+export default {
   mode: "jit",
-  purge: [],
+  purge: ["./index.html", "./asset/**/*.ts"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
