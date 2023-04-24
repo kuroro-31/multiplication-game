@@ -1,3 +1,4 @@
+"use strict";
 window.addEventListener("DOMContentLoaded", function () {
     var questionElement = document.getElementById("question");
     var answerElement = document.getElementById("answer");

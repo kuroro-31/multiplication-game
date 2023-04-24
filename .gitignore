@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+
+# Build files
+main.js
+style.css
+
+# Minified files
+main.min.js
+style.min.css
+
+# TypeScript cache
+*.tsbuildinfo
+.DS_Store
