@@ -5,10 +5,6 @@ node_modules/
 main.js
 style.css
 
-# Minified files
-main.min.js
-style.min.css
-
 # TypeScript cache
 *.tsbuildinfo
 .DS_Store
