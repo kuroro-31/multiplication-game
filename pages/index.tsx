@@ -1,11 +1,17 @@
-
-import TypingGame from '@/components/TypingGame';
+/*
+|--------------------------------------------------------------------------
+| トップページ
+|--------------------------------------------------------------------------
+*/
+import Footer from "@/components/molecules/Footer";
+import Header from "@/components/molecules/Header";
 
 export default function Home() {
   return (
-    <main
-    >
-      <TypingGame />
-    </main>
-  )
+    <div>
+      <Header />
+      <main></main>
+      <Footer />
+    </div>
+  );
 }

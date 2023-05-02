@@ -1,16 +1,14 @@
-import '@/styles/globals.scss';
+import "@/styles/globals.scss";
 
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Layout from "@/components/organisms/Layout";
 
-import type { AppProps } from 'next/app';
-
+import type { AppProps } from "next/app";
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
-};
+}
